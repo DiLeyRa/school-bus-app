@@ -1,29 +1,30 @@
 import { Injectable } from '@angular/core';
-import { AngularFireAuth } from 'angularfire2/auth';
-import * as firebase from 'firebase/app';
-import { map}  from 'rxjs/operators';
+//importar las dependencias
+import { AngularFireAuth } from '@angular/fire/auth';
+import { map } from 'rxjs/operators';
+
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  constructor(
-    public afAuth: AngularFireAuth
-  )   { }
+  constructor(public afAuth: AngularFireAuth) { }
 
-loginEmail(email: string, pass: String){
-  return new Promise((resolver, reject) => {
-    this.afAuth.auth.signInWithEmailandPassword(email, pass)
-    .then(userData => resolve(userData),
-    err => reject (err));
-  });
+
+  loginEmail(email:string, password:string) {
+    return new Promise((resolve, reject) => {
+      this.afAuth.auth.signInWithEmailAndPassword(email, password)
+      .then( userData => resolve(userData),
+      err => reject(err));
+    });
+  }
+
+stateAuth(){
+  return this.afAuth.authState.pipe(map(auth => auth));
 }
 
-getAuth() {
-return this.afAuth.authState.pipe(map(auth => auth))
-
-}
-  logout() {
+  logOut(){
     return this.afAuth.auth.signOut();
   }
+
 }
