@@ -1,0 +1,18 @@
+<img src='./assets/images/logo.png' class="img-margin col-sm-12 col-lg-6 offset-lg-3">
+<div class="col-sm-12">
+
+    <h2 class="text-center">Inicio de Sesion</h2>
+<form class="col-lg-4 offset-lg-4" (submit) = "onSubmitLogin()">
+    <div class="form-group">
+    <label >Email</label>
+    <input type="email" name="email" id="email" [(ngModel)]="email" class="form-control" placeholder="Introduce tu email...">
+    <small id="emailHelp" class="form-text text-muted">Por seguridad no compartas tus credenciales.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="password" name ="password" [(ngModel)]="password" placeholder="Introduce tu password...">
+  </div>
+  <button type="submit" class="text-light btn btn-warning col-sm-12">Entrar</button>
+</form>
+
+</div>
