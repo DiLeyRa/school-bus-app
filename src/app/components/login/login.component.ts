@@ -17,4 +17,15 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSubmitLogin() {
+    this.authService.loginEmail(this.email, this.password)
+      .then((res) => {
+        console.log('iniciaste sesion');
+        console.log(res);
+        this.router.navigate(['/profile']);
+      }).catch((err) => {
+        console.log(err);
+      })
+  }
+
 }
