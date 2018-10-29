@@ -2,7 +2,7 @@
 <div class="col-sm-12">
 
     <h2 class="text-center">Inicio de Sesion</h2>
-<form class="col-lg-4 offset-lg-4" (submit) = "onSubmitLogin()">
+    <form class="col-lg-4 offset-lg-4" >
     <div class="form-group">
     <label >Email</label>
     <input type="email" name="email" id="email" [(ngModel)]="email" class="form-control" placeholder="Introduce tu email...">
@@ -12,7 +12,7 @@
     <label for="exampleInputPassword1">Password</label>
     <input type="password" class="form-control" id="password" name ="password" [(ngModel)]="password" placeholder="Introduce tu password...">
   </div>
-  <button type="submit" class="text-light btn btn-warning col-sm-12">Entrar</button>
+  <button type="submit" class="text-light btn btn-warning col-sm-12" (click) = "onSubmitLogin()" >Entrar</button>
 </form>
 
 </div>
