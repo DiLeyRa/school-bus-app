@@ -23,6 +23,7 @@ export class UbicacionComponent implements OnInit {
 public ngOnInit() { }
 
 public ngAfterViewInit() {
+
     let defaultLayers = this.platform.createDefaultLayers();
     let map = new H.Map(
         this.mapElement.nativeElement,
@@ -35,4 +36,3 @@ public ngAfterViewInit() {
 }
 
 }
-
