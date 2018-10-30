@@ -11,10 +11,12 @@
                                       <h4 class="card-title">Viajes</h4>
                                       <h6 class="card-subtitle mb-2 text-muted">miercoles, 30 de Octubre</h6>
                                       <p class="card-text">El bus llegará en 20 min</p>
-                                      <span> <a  class="card-link modificar" (click) = "goBack()">Modificar</a>
-                                      <a  class="card-link cancelar" data-toggle="modal" data-target="#exampleModal" >Cancelar</a></span>
+                                      <span>
+                                          <a  class="card-link" (click) = "goBack()">Modificar</a>
+                                          <a  class="card-link" data-toggle="modal" data-target="#exampleModal" >Cancelar</a>
+                                      </span>
+                                      
                                     </div>
-
 
                                           <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -63,6 +65,10 @@
               </label>
 
             </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-warning text-light">Guardar cambios</button>
+              </div>
           </div>
         </div>
       </div>
