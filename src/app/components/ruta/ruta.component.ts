@@ -1,13 +1,12 @@
-import { Component, OnInit, ViewChild, ElementRef} from '@angular/core';
-
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 declare var H: any;
 
 @Component({
-  selector: 'app-ubicacion',
-  templateUrl: './ubicacion.component.html',
-  styleUrls: ['./ubicacion.component.css']
+  selector: 'app-ruta',
+  templateUrl: './ruta.component.html',
+  styleUrls: ['./ruta.component.css']
 })
-export class UbicacionComponent implements OnInit {
+export class RutaComponent implements OnInit {
   private platform: any;
 
     @ViewChild("map")
@@ -35,4 +34,5 @@ public ngAfterViewInit() {
 }
 
 }
+
 

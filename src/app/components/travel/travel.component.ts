@@ -1,13 +1,12 @@
-import { Component, OnInit, ViewChild, ElementRef} from '@angular/core';
-
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 declare var H: any;
 
 @Component({
-  selector: 'app-ubicacion',
-  templateUrl: './ubicacion.component.html',
-  styleUrls: ['./ubicacion.component.css']
+  selector: 'app-travel',
+  templateUrl: './travel.component.html',
+  styleUrls: ['./travel.component.css']
 })
-export class UbicacionComponent implements OnInit {
+export class TravelComponent implements OnInit {
   private platform: any;
 
     @ViewChild("map")

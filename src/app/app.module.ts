@@ -12,13 +12,20 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from '../environments/environment';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { TravelComponent } from './components/travel/travel.component';
+import { RutaComponent } from './components/ruta/ruta.component';
+import { AgendadoComponent } from './components/agendado/agendado.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     UbicacionComponent,
-    NavbarComponent
+    NavbarComponent,
+    TravelComponent,
+    RutaComponent,
+    AgendadoComponent
   ],
   imports: [
      BrowserModule,
