@@ -30,4 +30,9 @@ stateAuth(){
     return this.afAuth.authState.pipe(map( auth => auth));
   }
 
+  moveMapBerlin(map){
+    map.setCenter({lat:52.5159, lng:13.3777});
+    map.setZoom(14);
+  }
+
 }
