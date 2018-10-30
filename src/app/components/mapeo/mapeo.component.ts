@@ -12,6 +12,7 @@ export class MapeoComponent implements OnInit {
 
   private platform: any;
 
+
     @ViewChild("map")
     public mapElement: ElementRef;
   public constructor(
@@ -29,20 +30,28 @@ export class MapeoComponent implements OnInit {
 
   public ngAfterViewInit() {
 
-      let defaultLayers = this.platform.createDefaultLayers();
-      let map = new H.Map(
-          this.mapElement.nativeElement,
-          defaultLayers.normal.map,
+    let defaultLayers = this.platform.createDefaultLayers();
+    let map = new H.Map(
+      this.mapElement.nativeElement,
+      defaultLayers.normal.map,
           {
-              zoom: 10,
-              center: { lat: 19.4978, lng:  -99.1269 }
+            zoom: 14,
+            center: { lat: 19.4045425, lng:  -99.1662047},
           }
       );
+      var icon = new H.map.Icon('../../assets/images/place.png');
+      var marker = new H.map.Marker({ lat: 19.4045425, lng: -99.1662047}, { icon: icon });
+
+      map.addObject(marker);
+
+
   }
 
   public goBack() {
     this.router.navigate(['/ruta']);
 
   }
+
+
 
 }
