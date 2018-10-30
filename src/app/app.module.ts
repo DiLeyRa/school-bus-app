@@ -11,13 +11,14 @@ import{ AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from '../environments/environment';
-import { ConexionService } from './servicios/conexion.service';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    UbicacionComponent
+    UbicacionComponent,
+    NavbarComponent
   ],
   imports: [
      BrowserModule,
