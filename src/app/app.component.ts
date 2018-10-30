@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { OnInit, ViewChild, ElementRef, Input } from '@angular/core';
 
-declare var H: any;
+
 
 @Component({
   selector: 'app-root',

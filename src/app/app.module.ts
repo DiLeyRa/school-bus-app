@@ -15,6 +15,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { TravelComponent } from './components/travel/travel.component';
 import { RutaComponent } from './components/ruta/ruta.component';
 import { AgendadoComponent } from './components/agendado/agendado.component';
+import { MapeoComponent } from './components/mapeo/mapeo.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -25,7 +27,8 @@ import { AgendadoComponent } from './components/agendado/agendado.component';
     NavbarComponent,
     TravelComponent,
     RutaComponent,
-    AgendadoComponent
+    AgendadoComponent,
+    MapeoComponent
   ],
   imports: [
      BrowserModule,
@@ -34,7 +37,8 @@ import { AgendadoComponent } from './components/agendado/agendado.component';
      AngularFireAuthModule,
      AngularFireModule.initializeApp(environment.firebaseConfig),
      AngularFirestoreModule,
-     AngularFireStorageModule
+     AngularFireStorageModule,
+     HttpClientModule
    ],
   providers: [AuthService],
   bootstrap: [AppComponent]

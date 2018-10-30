@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef} from '@angular/core';
 
+declare var H:any;
+
 
 
 @Component({
@@ -16,6 +18,7 @@ export class UbicacionComponent implements OnInit {
 
 
   public constructor() {
+
     this.platform = new H.service.Platform({
         "app_id": "EmLr27hwIitMqx8wppBZ",
         "app_code": "DNJEPETR0FKisPTrrPBW5g"

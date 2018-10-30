@@ -5,6 +5,7 @@ import { UbicacionComponent } from './components/ubicacion/ubicacion.component';
 import { TravelComponent } from './components/travel/travel.component';
 import { RutaComponent } from './components/ruta/ruta.component';
 import { AgendadoComponent } from './components/agendado/agendado.component';
+import { MapeoComponent } from './components/mapeo/mapeo.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   {path: 'travel', component: TravelComponent},
   {path: 'ruta', component: RutaComponent},
   {path: 'agendado', component: AgendadoComponent}
+    {path: 'mapeo', component: MapeoComponent}
 ];
 
 @NgModule({
