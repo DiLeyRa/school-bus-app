@@ -1,27 +1,22 @@
-<div class="container text-aling">
-    <div class="row">
-      <div class="col-sm-4">
-        <h1>¡Viaje agendado!</h1>
-      </div>
-      <div class="col-sm-4">
-        <h5>El bus pasará a las 7:30 am</h5>
-      </div>
-    </div>
-    <div class="row">
-      <img src="../../../assets/images/school-bus.png" class="img" alt="bus">
-    </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <h5>Recuerda estar 5 minutos antes de la hr programada.</h5>
-      </div>
-    </div>
-    <div class="row btn">
-      <div class="col-sm-12">
-        <button type="click" class="text-light btn btn-warning col-sm-12" (click) = "onRutas()" >Entendido</button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
+<div class="row">
+    <div class="col-md-12 mx-auto mt-5">
+      <div class="card">
+        <div class="card-body">
+            <h1 class="text-center">¡Viaje agendado!</h1>
+          <form>
+              <div class="form-group text-center">
+                  <h5>El bus pasará a las 7:30 am</h5>
+                </div>
+                <div class="form-group">
+                    <img src="./assets/images/school-bus.png" class="img-fluid" alt="Responsive image" style="display:block;
+                    margin:auto;">
+                  </div>
+                  <div class="form-group text-center">
+                      <h5>Recuerda estar 5 minutos antes de la hr programada.</h5>
+                    </div>
+            <input type="submit" value="Entendido" routerLink="/mapeo" class="enviar btn btn-primary btn-block btn-lg">
+          </form>
+        </div>
       </div>
     </div>
   </div>

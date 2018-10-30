@@ -12,8 +12,8 @@ const routes: Routes = [
   {path: 'ubicacion', component: UbicacionComponent},
   {path: 'travel', component: TravelComponent},
   {path: 'ruta', component: RutaComponent},
-  {path: 'agendado', component: AgendadoComponent}
-    {path: 'mapeo', component: MapeoComponent}
+  {path: 'agendado', component: AgendadoComponent},
+  {path: 'mapeo', component: MapeoComponent}
 ];
 
 @NgModule({
