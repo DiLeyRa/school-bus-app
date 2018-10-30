@@ -34,7 +34,7 @@ export class UbicacionComponent implements OnInit {
             center: { lat: 19.4056085, lng:  -99.1674879},
           }
       );
-      var icon = new H.map.Icon('../../assets/images/place.png');
+      var icon = new H.map.Icon('https://raw.githubusercontent.com/DiLeyRa/school-bus-app/master/src/assets/images/place.png');
       var marker = new H.map.Marker({ lat: 19.4056085, lng: -99.1674879}, { icon: icon });
 
       map.addObject(marker);

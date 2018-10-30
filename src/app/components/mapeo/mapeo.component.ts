@@ -39,7 +39,7 @@ export class MapeoComponent implements OnInit {
             center: { lat: 19.4045425, lng:  -99.1662047},
           }
       );
-      var icon = new H.map.Icon('../../assets/images/place.png');
+      var icon = new H.map.Icon('https://raw.githubusercontent.com/DiLeyRa/school-bus-app/master/src/assets/images/place.png');
       var marker = new H.map.Marker({ lat: 19.4045425, lng: -99.1662047}, { icon: icon });
 
       map.addObject(marker);
