@@ -25,15 +25,21 @@ export class UbicacionComponent implements OnInit {
   public ngOnInit() { }
 
   public ngAfterViewInit() {
-      let defaultLayers = this.platform.createDefaultLayers();
-      let map = new H.Map(
-          this.mapElement.nativeElement,
-          defaultLayers.normal.map,
+    let defaultLayers = this.platform.createDefaultLayers();
+    let map = new H.Map(
+      this.mapElement.nativeElement,
+      defaultLayers.normal.map,
           {
-              zoom: 10,
-              center: { lat: 19.4978, lng:  -99.1269 }
+            zoom: 16,
+            center: { lat: 19.4056085, lng:  -99.1674879},
           }
       );
-  }
+      var icon = new H.map.Icon('../../assets/images/place.png');
+      var marker = new H.map.Marker({ lat: 19.4056085, lng: -99.1674879}, { icon: icon });
+
+      map.addObject(marker);
+
 
   }
+
+}
