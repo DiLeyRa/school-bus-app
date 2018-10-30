@@ -1,0 +1,12 @@
+h1, h5{
+    text-align: center;
+}
+.img {
+    margin: 8%;
+    width: 80%;
+    height: 80%;
+}
+.btn {
+    margin-top: 8%;
+    width: 16em;
+}

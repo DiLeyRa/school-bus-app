@@ -1,19 +1,16 @@
-import { Component, OnInit, ViewChild, ElementRef} from '@angular/core';
-
-
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+declare var H: any;
 
 @Component({
-  selector: 'app-ubicacion',
-  templateUrl: './ubicacion.component.html',
-  styleUrls: ['./ubicacion.component.css']
+  selector: 'app-ruta',
+  templateUrl: './ruta.component.html',
+  styleUrls: ['./ruta.component.css']
 })
-export class UbicacionComponent implements OnInit {
+export class RutaComponent implements OnInit {
   private platform: any;
 
     @ViewChild("map")
     public mapElement: ElementRef;
-
-
 
   public constructor() {
     this.platform = new H.service.Platform({
@@ -25,7 +22,6 @@ export class UbicacionComponent implements OnInit {
 public ngOnInit() { }
 
 public ngAfterViewInit() {
-
     let defaultLayers = this.platform.createDefaultLayers();
     let map = new H.Map(
         this.mapElement.nativeElement,
@@ -38,3 +34,5 @@ public ngAfterViewInit() {
 }
 
 }
+
+

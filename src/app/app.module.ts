@@ -11,13 +11,21 @@ import{ AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from '../environments/environment';
-import { ConexionService } from './servicios/conexion.service';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { TravelComponent } from './components/travel/travel.component';
+import { RutaComponent } from './components/ruta/ruta.component';
+import { AgendadoComponent } from './components/agendado/agendado.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    UbicacionComponent
+    UbicacionComponent,
+    NavbarComponent,
+    TravelComponent,
+    RutaComponent,
+    AgendadoComponent
   ],
   imports: [
      BrowserModule,
