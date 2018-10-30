@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
 
-declare var H: any;
+
 
 @Component({
   selector: 'app-ubicacion',
@@ -12,6 +12,8 @@ export class UbicacionComponent implements OnInit {
 
     @ViewChild("map")
     public mapElement: ElementRef;
+
+
 
   public constructor() {
     this.platform = new H.service.Platform({
