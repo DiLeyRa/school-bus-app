@@ -3,3 +3,13 @@
     height: 1em;
     display: inline-block;
 }
+.enviar{
+    background: #FAAF06;
+    color:#fff;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    display: block;
+    font-size: 200%;
+}

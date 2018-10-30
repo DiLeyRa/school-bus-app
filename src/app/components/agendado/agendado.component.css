@@ -1,12 +1,27 @@
-h1, h5{
-    text-align: center;
+.enviar{
+    background: #FAAF06;
+    color:#fff;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    display: block;
+    font-size: 200%;
 }
-.img {
-    margin: 8%;
-    width: 80%;
-    height: 80%;
+.optiones{
+margin-top: 2.5em;
 }
-.btn {
-    margin-top: 8%;
-    width: 16em;
+.btn-modificar{
+    background: #A5C301;
+    color:#fff;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-cancelar{
+    background: rgb(195, 24, 1);
+    color:#fff;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
